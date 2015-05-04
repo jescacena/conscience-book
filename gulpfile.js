@@ -184,7 +184,7 @@ gulp.task('html', function () {
 });
 
 gulp.task('watch', function () {
-    gulp.watch(['./src/*.html','/src/css/*.css'], ['html']);
+    gulp.watch(['./src/*.html'], ['html']);
 });
 
 gulp.task('server', function (done) {
