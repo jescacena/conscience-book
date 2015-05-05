@@ -88,18 +88,76 @@ textarea {
    Author's custom styles
    ========================================================================== */
 .container {
-    max-width: 1024px;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
-    border: 2px solid black;
+    border: 1px solid black;
+    background: #eee;
+}
+
+.container .main-content {
+    margin: 0;
+    height:700px;
+}
+
+header h1{
+    text-align: center;
+    //margin: 200px auto;
+    font-family: arial;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 2px 2px 0 #ffd217, 4px 4px 0 #5ac7ff, 6px 6px 0 #ffd217, 8px 8px 0 #5ac7ff;
 }
 
 .content-left {
     float:left;
+    height:100%;
+    width: 499px;
+    background: no-repeat;
 }
+
 .content-right {
     float:right;
+    height:100%;
+    width: 499px;
+    background: no-repeat;
 }
+
+.content {
+    display: table-cell;
+    vertical-align: middle;
+    height: 690px;
+}
+.vertical-align-container {
+    display: table-cell;
+    vertical-align: middle;
+    height: 700px;
+}
+.yellow-link {
+    background: #E9DC51;
+    box-shadow: 1px 1px 1px 1px #888888;
+}
+
+.yellow-link a {
+    text-decoration: none;
+    padding-right: 50px;
+    padding-left: 50px;
+    font-size: large;
+    font-weight: 400;
+    color: black;
+    width: 100%;
+    display: table-cell;
+}
+.content h1 {
+    background: #E9DC51;
+    padding-right: 50px;
+    padding-left: 50px;
+    box-shadow: 1px 1px 1px 1px #888888;
+}
+
+
+
 
 
 

@@ -17,6 +17,7 @@ var dirs = pkg['h5bp-configs'].directories;
 
 var connect = require('gulp-connect');
 
+var imageResize = require('gulp-image-resize');
 
 // ---------------------------------------------------------------------
 // | Helper tasks                                                      |
@@ -185,6 +186,7 @@ gulp.task('html', function () {
 
 gulp.task('watch', function () {
     gulp.watch(['./src/*.html'], ['html']);
+    gulp.watch(['./src/css/*.css'], ['html']);
 });
 
 gulp.task('server', function (done) {
@@ -192,6 +194,17 @@ gulp.task('server', function (done) {
         'build',
         'connect', 'watch',
         done);
+});
+
+gulp.task('resize_500x700', function () {
+    gulp.src('./src/img/original/*.*')
+        .pipe(imageResize({
+            width : 500,
+            height : 700,
+            crop : true,
+            upscale : true
+        }))
+        .pipe(gulp.dest('./src/img/resized_500x700'));
 });
 
 gulp.task('default', ['build']);
