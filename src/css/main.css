@@ -97,12 +97,12 @@ textarea {
 
 .container .main-content {
     margin: 0;
-    height:700px;
+    height:650px;
 }
 
 header h1{
     text-align: center;
-    //margin: 200px auto;
+    /*margin: 200px auto;*/
     font-family: arial;
     font-size: 40px;
     text-transform: uppercase;
@@ -127,12 +127,12 @@ header h1{
 .content {
     display: table-cell;
     vertical-align: middle;
-    height: 690px;
+    height: 650px;
 }
 .vertical-align-container {
     display: table-cell;
     vertical-align: middle;
-    height: 700px;
+    height: 650px;
 }
 .yellow-link {
     background: #E9DC51;
